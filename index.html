@@ -19,14 +19,15 @@
 </head>
 <body>
 <article class="markdown-body">
-<h1>통근버스 운행관리시스템 시장 전수조사 보고서 (1+2차 통합)</h1>
+<h1>통근버스 운행관리시스템 시장 전수조사 보고서 (1+2+3차 통합)</h1>
 <blockquote>
 <p><strong>최초 조사일</strong>: 2026-06-02 (1차)<br>
 <strong>2차 보강 조사일</strong>: 2026-06-02 (동일자 추가 라운드)<br>
+<strong>3차 심층 조사일</strong>: 2026-06-04 (5개 미규명 의문 규명)<br>
 <strong>조사범위</strong>: 공공(나라장터·지자체·공공기관) + 민간(대기업·산단·캠퍼스·병원), 2023.1 ~ 2026.6<br>
-<strong>조사방법</strong>: deep-research 워크플로 2회 (1차: 65 claims/20 confirmed, 2차: 25 claims/18 confirmed)<br>
+<strong>조사방법</strong>: deep-research 워크플로 3회 (1차: 65 claims/20 confirmed, 2차: 25/18, 3차: 25/14)<br>
 <strong>출처 검증</strong>: 1차 자료 우선, 2차/blog는 명시<br>
-<strong>샘플 한계</strong>: 검증된 공공 공고 총 11건 (50~100건 목표 대비 부분 달성). 다만 11건이 모두 동일한 구조적 패턴을 보여 결론 일반화는 충분히 신뢰 가능.</p>
+<strong>샘플 한계</strong>: 검증된 공공 공고 총 12건 (3차에서 정부서울청사 노선별 공고 신규 추가). 다만 12건이 모두 동일한 구조적 패턴을 보여 결론 일반화는 충분히 신뢰 가능.</p>
 </blockquote>
 <hr>
 <h2>🔴 핵심 결론 (먼저 읽으세요)</h2>
@@ -609,6 +610,131 @@
 <li><code class="notranslate">2.카모마일(KD)/통근버스(경기도)/입찰준비_정리.md</code> — 경기도청 본청 입찰 준비 자료</li>
 <li><code class="notranslate">2.카모마일(KD)/통근버스(경기도)/제안/</code> — 모빌리전트 통근버스시스템 소개서 v1.1, 경기도 제안서 초안</li>
 <li><code class="notranslate">2.카모마일(KD)/통근버스(경기도)/계약(노바)/</code> — 노바-모빌리전트 하도급 계약 v1.0 (다만 공공 입찰에서는 4중 장벽으로 사용 불가, 민간 컨소시엄 또는 노바가 차량 보유 시 별도 적용)</li>
+</ul>
+<hr>
+<h1>11. 3차 심층 조사 결과 — 5개 미규명 의문 규명 (2026-06-04)</h1>
+<blockquote>
+<p>2차 보고서의 미규명 항목 5개에 대한 추가 deep-research 라운드.<br>
+25 claims verified → 14 confirmed / 11 refuted.</p>
+</blockquote>
+<h2>11-1. 의문 1: UNIBUS-KICOX 계약 구조</h2>
+<p><strong>결론</strong> (medium): UNIBUS(㈜썬더디에스)가 한국산업단지공단(KICOX) 통근버스시스템을 <strong>2020.07.01 서비스 개시</strong>한 사실은 벤더 공식 홈페이지 공지로 1차 확인됨 → <strong>시스템 단독 분리발주 두 번째 실증 사례 확정</strong>. 단 계약 구조(KICOX 본부 직접 vs 운수사 OEM vs 산단협의체 합산)는 미규명.</p>
+<ul>
+<li><strong>근거</strong>: <a href="https://www.unibus.kr/" rel="nofollow">UNIBUS 공식</a> 공지사항 "[안내]한국산업단지공단 통근버스시스템 서비스 개시" 20/07/01 게시. 독립 WebSearch 교차검증.</li>
+<li><strong>반증된 가설</strong>: "UNIBUS는 B2B2C(운수사 패키지 공급) 모델" → 3-0 기각. OEM 채널 우위는 입증 안 됨.</li>
+<li><strong>Implication</strong>: UNIBUS가 KICOX 채널을 선점한 것은 확정. 모빌리전트가 동일 패턴 진입하려면 (a) KICOX 본부 입찰공고 직접 모니터링, (b) 산단별 입주기업 협의체 접촉, (c) 운수사 OEM 채널 동시 추적의 3트랙 병행 필요.</li>
+</ul>
+<h2>11-2. 의문 2: 공공 차량+시스템 번들 운수사의 시스템 조달 패턴</h2>
+<p><strong>결론</strong> (high): LH 서울본부 공고(2501353-00)는 <strong>"버스운행정보제공시스템 기능이 탑재된 2020.01.01 이후 출고된 우등 리무진 차량"을 차량 사양 항목으로 요구</strong>하며, 발주처가 시스템사를 별도 지정하지 않음 → 낙찰 운수사가 자체 보유·OEM·외주 중 선택 가능.</p>
+<ul>
+<li><strong>근거</strong>: <a href="https://www.bidpro.co.kr/n0_ipchal/konggo/svc/konggo_view.asp?num=2870144" rel="nofollow">bidpro 공고 #2870144</a> 원문. 4중 자격 요건(전세버스 등록 + 직접생산확인 7811189901 + 공동계약 불허 + 시스템 탑재 차량)이 통합 발주됨. 행안부 지자체인재개발원 2026 공고도 동일 7811189901 명시 → <strong>공공기관 통근버스 발주의 표준 구조 확인</strong>.</li>
+<li><strong>Implication</strong>: LH/공공기관 번들 발주에서 시스템사 진입 채널은 <strong>낙찰 운수사 대상 OEM 영업뿐</strong>. 발주처 직접 영업 불가. 운수사 영업 시 헬로버스(CIEL)·UNIBUS·셔틀아이디와 직접 경쟁.</li>
+</ul>
+<h2>11-3. 의문 3: 경기도청형 시스템 단독 분리발주의 17개 광역지자체 확산 가능성</h2>
+<p><strong>결론</strong> (medium): 경기도청 외 16개 광역지자체의 시스템 단독 분리발주 패턴은 <strong>직접 입증 안 됨</strong>. 대신 <a href="https://www.sankun.com/bid-info/BkamTkEIy5KvOjagayjjCRBIHiPl04U3I-ICmbwzmDk" rel="nofollow">정부서울청사 통근버스 206노선 임차용역</a>이 시스템 분리발주 없는 <strong>차량+기사 단순 임차 구조</strong> (추정가 5,681만원·기초가 6,249.1만원·소액수의)로 운영됨이 확인되어 <strong>중앙정부 청사조차 분리발주가 아닌 사례</strong> 시사.</p>
+<ul>
+<li><strong>근거</strong>: 산군 공고 R25BK01121409-000 (2025.10.29, 행안부 정부청사관리본부 서울청사관리소, 206노선). 217·221·223노선 병렬 공고 + 전세버스조합 2023.10.31 공문 교차 확인.</li>
+<li><strong>Implication</strong>: 경기도청 본청(0.89억/36개월/55대) 사례는 <strong>예외적 모델일 가능성</strong> 있음. 17개 광역지자체 발주 패턴은 나라장터 개별 추적 필요. 시장 규모를 "경기도 모델 X 17"으로 가정했던 1·2차 결론은 보수적으로 재평가 필요.</li>
+</ul>
+<h2>11-4. 의문 4: 2026 혁신도시 통근버스 폐지 후 통근수요 흡수 메커니즘</h2>
+<p><strong>결론</strong> (high, 단 대안은 미확정): 국토부 2026.1.26 지시로 단계별 중단 일정 확정 — <strong>국립공원공단 2.28 종료, 3월 18곳(도공·한수원·한국전력기술), 4월 2곳(한전·한전KPS), 6월 25곳(LH·국민연금공단)</strong>. 149개 1차 이전 공공기관 중 47개 = 연 220.49억원. <strong>LH 진주혁신도시 단독으로만 연 27억원</strong>. 그러나 카풀·보조금·민간 셔틀 전환 등 후속 대안은 정부 공식 발표로 미확인 (관련 보강 claim 2건 모두 기각 → "대안 미발표"로도 단정 불가).</p>
+<ul>
+<li><strong>근거</strong>: <a href="https://www.laborplus.co.kr/news/articleView.html?idxno=40253" rel="nofollow">LaborPlus</a>, <a href="https://biz.newdaily.co.kr/site/data/html/2026/03/05/2026030500432.html" rel="nofollow">뉴데일리 2026.03.05</a>, <a href="https://imnews.imbc.com/replay/2026/nwtoday/article/6799929_37012.html" rel="nofollow">MBC 2026.02</a> 다수 매체 교차검증.</li>
+<li><strong>Implication</strong>: 220.49억 시장 단기 소멸 확정. 모빌리전트 공공 통근버스 진입 추진해도 1차 이전 공공기관 시장은 절반 이상 사라짐. <strong>신규 카테고리(직원 카풀 매칭·교통비 정산 플랫폼) 가능성은 있으나 미확정</strong> — 한전·LH·국민연금공단의 대체 방안 발표 직접 추적이 가장 시급.</li>
+</ul>
+<h2>11-5. 의문 5: 모빌리전트 전세버스 자회사 신설 시 진입비용·기간</h2>
+<p><strong>결론</strong> (high, 단 부분 규명): <strong>직접생산확인증명서 절차는 표준화 확인</strong> — 중기부 판로정책과 소관, 4단계 (공공구매종합정보망 SMPP 접속 → 온라인 자료제출·신청서 → 한국중소벤처기업유통원 방문 실사 → 직접생산기업 확인서 발급). SMPP에 973개 품목 기준(중기부 고시 제2024-100호) 등재, 공공기관통근운송서비스(7811189901) 포함. 단 <strong>전세버스 등록 절차·자본금·차고지 요건 + 운수사 인수 가격대는 미규명</strong> (블로그 추정치 5~7주는 0-3 기각).</p>
+<ul>
+<li><strong>근거</strong>: <a href="https://www.smes.go.kr/main/pageApplyCertificateDirProd" rel="nofollow">중소벤처24 절차 안내</a>, <a href="https://www.smpp.go.kr/dpc/dpCnfirmCrtr/SelectDpCnfirmStdrInfoListVw.do" rel="nofollow">SMPP 직접생산확인기준</a>. 법적 근거: 중소기업제품 구매촉진 및 판로지원에 관한 법률 제9조.</li>
+<li><strong>선행 요건</strong>: 직접생산확인 신청 전에 <strong>(1) SMPP 회원가입 + 기업·공장·제품 정보 등록 → (2) 전세버스 면허 → (3) 직영차량 보유</strong>가 모두 충족되어야 신청 가능.</li>
+<li><strong>Implication</strong>: 진입 경로 3가지 — (a) 신규 전세버스 자회사 설립, (b) 기존 운수사 인수 (50대 규모 가격대 미규명), (c) <strong>노바/카모마일(KD) 등 그룹사 면허 활용 우회</strong>. 각 옵션 정량 비교는 후속 조사 필요. <strong>(c)가 시간·비용 최소 후보</strong>.</li>
+</ul>
+<h2>11-6. 보너스 발견 1: 카카오모빌리티 통근셔틀 신규 진입자</h2>
+<p><strong>결론</strong> (medium): 카카오모빌리티가 **<a href="https://service.kakaomobility.com/biz/services/vertical/shuttle/" rel="nofollow">Kakao T 비즈니스 통근셔틀</a>**을 모바일 QR + 사전예약 방식으로 정식 서비스 중. iOS(id6478443360) + Google Play(com.scoop.mobiliteasykakaoshuttle) 전용 앱 운영. <strong>RFID 단말 중심 기존 시스템사(UNIBUS·모빌리전트)와 차별화된 진입자</strong>로 부상.</p>
+<ul>
+<li><strong>반증</strong>: "노선 설계·관제·차량관리·고객센터 전 과정 제공" (0-3), "수요조사·탑승률 데이터 기반 노선 최적화" (0-3) 모두 과대 해석 → 카카오모빌리티 통근셔틀의 실제 기능 범위는 <strong>모바일 예약·QR 인증 수준에 제한된 것으로 추정</strong>.</li>
+<li><strong>Implication</strong>: 모빌리전트 LTE+RFID 단말 구조는 카카오 진입 후에도 <strong>HW+SW 통합 + RFID 사원증 인증을 강점으로 유지 가능</strong> (대기업 사내 출입 보안 통합 시 우세). 다만 영업 메시지에서 모바일 QR 대비 RFID의 가치(보안·노출 카드 활용·앱 미설치 사용자 지원)를 명확히 정리해야 함.</li>
+</ul>
+<h2>11-7. 보너스 발견 2: UNIBUS 솔루션 스펙 — 결제 모듈 통합</h2>
+<p><strong>결론</strong> (high): UNIBUS는 차량 단말기·관리 SW·모바일 앱에 <strong>신용카드·가상계좌·휴대폰 소액결제</strong> 다중 결제수단 충전 + 사원증·학생증·보안카드·QR 다중 인증 + 좌석 예약을 통합 제공.</p>
+<ul>
+<li><strong>근거</strong>: UNIBUS 공식 홈페이지 자체 기능 서술.</li>
+<li><strong>Implication</strong>: <strong>모빌리전트 솔루션은 결제 모듈 부재</strong> → 공공기관·산단 RFP에 결제 요건 포함 시 즉시 기능 추가 또는 <strong>PG사 연계 필요</strong>. 사양 충족 못 하면 UNIBUS·헬로버스에 자동 패배.</li>
+</ul>
+<hr>
+<h2>12. 3차 조사 후 영업 전략 미세조정</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>영역</th>
+<th>1·2차 결론</th>
+<th>3차 보강 후 갱신</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>광역지자체 확산성</td>
+<td>경기도 모델 17개 시도 확산 가능 (가정)</td>
+<td><strong>정부서울청사도 분리발주 아님</strong> → 경기도 모델은 예외적일 가능성. 시장 규모 가정 보수적으로 재평가</td>
+</tr>
+<tr>
+<td>KICOX 영업 채널</td>
+<td>UNIBUS 사례 발견, 진입 경로 미상</td>
+<td><strong>3트랙 병행</strong> — KICOX 본부 직접/산단협의체/운수사 OEM</td>
+</tr>
+<tr>
+<td>운수사 B2B (의문 2)</td>
+<td>사양 명시 발주만 한정, 우선도 낮춤</td>
+<td><strong>LH 사례로 OEM 진입 채널 확정</strong> — 낙찰 운수사 영업 시 헬로버스·UNIBUS·셔틀아이디와 정면 경쟁</td>
+</tr>
+<tr>
+<td>혁신도시 시장</td>
+<td>47개 폐지 = 시장 소멸</td>
+<td><strong>대안 카테고리(카풀·정산 플랫폼) 가능성 잠재</strong> — 한전/LH/연금공단 후속 정책 추적</td>
+</tr>
+<tr>
+<td>전세버스 자회사 진입</td>
+<td>6개월~1년 추정</td>
+<td>직접생산확인 절차는 표준화. <strong>노바/KD 그룹사 면허 활용이 최단 경로</strong> 후보</td>
+</tr>
+<tr>
+<td>신규 경쟁자</td>
+<td>헬로버스·UNIBUS·셔틀아이디</td>
+<td><strong>+ 카카오모빌리티(모바일 QR 중심)</strong> 신규 등장 → RFID 가치 명확화 필요</td>
+</tr>
+<tr>
+<td>모빌리전트 기능 갭</td>
+<td>(미평가)</td>
+<td><strong>결제 모듈 부재</strong> → 공공·산단 RFP 대응 시 PG 연계 또는 자체 개발 필요</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>13. 향후 3개월 액션 (3차 갱신, Top 5 우선)</h2>
+<ol>
+<li><strong>KICOX 본부 + 산단별 경영자협의회 접촉</strong> — UNIBUS 계약 구조 규명 + 차기 발주 모니터링 (KICOX 사업소개·산단별 협의체 자료 직접 확인)</li>
+<li><strong>노바/카모마일(KD) 그룹사 전세버스 면허 보유 여부 사내 확인</strong> — 직접생산확인 신청 우회 경로 가능성 (의문 5)</li>
+<li><strong>혁신도시 통근버스 폐지 기관(한전·LH·국민연금공단) 대체 통근정책 발표 추적</strong> — 카풀·정산 플랫폼 신규 카테고리 진입 기회 (의문 4)</li>
+<li><strong>17개 광역지자체 자산관리과 통근버스 발주 이력 일제 조사</strong> — 경기도 모델 확산성 검증 (의문 3)</li>
+<li><strong>모빌리전트 결제 모듈 추가 또는 PG 연계 로드맵 수립</strong> — UNIBUS 대비 기능 갭 해소 (보너스 발견 2)</li>
+</ol>
+<hr>
+<h2>부록 C: 3차 조사 한계</h2>
+<ul>
+<li>UNIBUS-KICOX 구체적 계약 구조 미규명</li>
+<li>17개 광역지자체 시스템 분리발주 패턴 표본 0건 (정부서울청사 1건 추가 확인되었으나 분리발주 아닌 사례)</li>
+<li>혁신도시 폐지 후 대안(카풀·보조금) 정부 공식 발표 미확인 — "대안 부재"로도 "존재"로도 단정 불가</li>
+<li>전세버스 면허 신규 등록 절차·자본금·차고지·차량대수 요건과 운수사 인수 가격대 미규명</li>
+<li>시점 민감성: 2026.6월 LH·국민연금공단 등 25곳 동시 중단 직후라 향후 1~3개월 정책 갱신 가능성 큼</li>
+</ul>
+<h2>부록 D: 3차 조사 반증된 클레임 (보고서 미사용)</h2>
+<ul>
+<li>헬로버스 공공기관·운수사 OEM 미강조 (1-2 기각)</li>
+<li>여객운송사업 면허 신규 신청 5~7주 (0-3 기각, koreaq.com 블로그)</li>
+<li>UNIBUS 운수사 패키지 공급 B2B2C 모델 (0-3 기각)</li>
+<li>KICOX가 UNIBUS의 유일한 공식 공공기관 사례 (1-2 split)</li>
+<li>카카오모빌리티 통근셔틀 운영 전과정 제공 + 노선 최적화 (각각 0-3 기각)</li>
+<li>정부서울청사 단일 노선이 직접생산확인·시스템 사양 요구 없는 단순 임차 (0-3 기각, 사양 가능성 배제 못함)</li>
+<li>혁신도시 폐지 후속 대안 미발표 (laborplus 1-2, MBC 0-3 모두 기각)</li>
 </ul>
 </article>
 </body>
