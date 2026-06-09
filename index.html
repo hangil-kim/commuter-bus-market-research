@@ -25,8 +25,9 @@
 <blockquote>
 <p><strong>목적</strong>: (1) 한국 통근버스 운행관리시스템 시장 구조 규명 + (2) 모빌리전트가 사업 수주에 성공하기 위한 영업·기술·진입 전략 정리<br>
 <strong>마지막 갱신</strong>: 2026-06-09<br>
-<strong>조사 기간 / 방법</strong>: 2026-06-02 ~ 2026-06-09, 11회 누적 조사 — deep-research workflow + Playwright 직접 크롤링(LH e-bid·tourbus.or.kr) + HWP 첨부 파싱(pyhwp/hwp5txt)<br>
-<strong>검증된 표본</strong>: 공공 공고 11건 + LH e-bid 5년치 45건 + 민간 도입 사례 12건 + 시스템사 6사 + 협력 운수사 2사</p>
+<strong>조사 기간 / 방법</strong>: 2026-06-02 ~ 2026-06-09, 12회 누적 조사 — deep-research workflow + Playwright 직접 크롤링(LH e-bid·tourbus.or.kr) + HWP 첨부 파싱(pyhwp/hwp5txt)<br>
+<strong>검증된 표본</strong>: 공공 공고 11건 + LH e-bid 5년치 45건 + 민간 도입 사례 12건 + 시스템사 6사 + 협력 운수사 2사 + 위즈돔 MiRi(B2G) 시나리오 1차 자료<br>
+<strong>사용자 1차 확정 정보</strong>: (주)대원관광 = KD운송그룹 계열사 + 서울특별시전세버스조합 회원 + 전세버스 면허 / 카모마일(Camomile) = 모빌리전트의 시스템 제품명 / <strong>KD에 카모마일 도입 협상 진행 중</strong></p>
 </blockquote>
 <hr>
 <h2>📌 경영진 요약 (Executive Summary)</h2>
@@ -38,13 +39,21 @@
 <li><strong>운수사 OEM 채널 + 그룹사 면허 우회</strong> — 노바/카모마일(KD) 또는 KD운송그룹 (주)대원관광 등 면허 보유 파트너와 결합해 풀스택 입찰</li>
 <li><strong>민간 B2B SaaS 화이트스페이스 영업</strong> — 헬로버스 354사·위즈돔 176사 외 중견기업·산단·대학·병원</li>
 </ol>
-<h3>향후 3개월 최우선 액션 Top 5</h3>
+<h3>향후 3개월 최우선 액션 Top 5 (사용자 정보 반영)</h3>
+<blockquote>
+<p><strong>사실 확정</strong> (사용자 1차 정보):</p>
+<ul>
+<li>(주)대원관광 = KD운송그룹 계열사 + <strong>서울특별시전세버스운송사업조합 회원</strong> (전세버스 면허 보유)</li>
+<li><strong>카모마일(Camomile) = 모빌리전트의 버스운행관리시스템 제품명</strong> (회사명 아님)</li>
+<li><strong>현재 KD에 카모마일 도입 협상 진행 중</strong> ← (c) 진입 경로 (운수사+시스템 결합)가 이미 활성화 단계</li>
+</ul>
+</blockquote>
 <ol>
-<li><strong>(주)대원관광-카모마일(KD) 관계 사내 확인 + 서울시전세버스조합 회원 등재 여부 검증</strong> (그룹사 면허 우회 가능성 확정)</li>
+<li><strong>KD-카모마일 도입 협상 완결 → 대원관광을 통한 입찰 응모 트랙 구축</strong> ((주)대원관광이 발주 응모, 카모마일이 시스템 공급하는 통합 패키지 패턴 정착)</li>
 <li><strong>경기도청 0528 3차 재공고 입찰 결과 추적</strong> (낙찰자·낙찰가 — 에스원 응모 후속)</li>
 <li><strong>포스코·LG디스플레이·현대차 통근버스 시스템 벤더 직접 확인</strong> (앱스토어·협력사 채용공고 — 화이트스페이스 확정)</li>
 <li><strong>17개 광역시도 자산관리과 통근버스 발주 패턴 일제 조사</strong> (경기도 모델 확산 검증)</li>
-<li><strong>결제 모듈 추가 또는 PG 연계 로드맵</strong> (UNIBUS·위즈돔 대비 기능 갭 해소)</li>
+<li><strong>LH 서울본부 + 광역지자체 시스템 분리발주 트랙 입찰 준비</strong> (시제품 + 적격심사 신인도 확보)</li>
 </ol>
 <hr>
 <h1>1부. 시장 구조 분석</h1>
@@ -534,7 +543,50 @@
 <li><strong>민간 풀스택 제안</strong> — 시스템·운수·인력·법무·회계 단일 패키지</li>
 <li><strong>법률 리스크 사전 차단</strong> — 태평양·신우 인프라</li>
 </ol>
-<h2>3-3. 모빌리전트 vs 경쟁사 차별화 포인트</h2>
+<h2>3-3. 시스템사 제품 라인업·기능 상세 매트릭스 (12차 보강)</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>시스템사</th>
+<th>제품 라인업 (B2G/B2B/B2C)</th>
+<th>핵심 기능</th>
+<th>사업 참여 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>위즈돔</strong></td>
+<td><strong>B2G: MiRi(미리)</strong> — 광역버스 좌석예약 (M·G·P버스) <br> <strong>B2B: AIBOS·COMMUTE</strong> — 통근관제·좌석예약 통합</td>
+<td>MiRi: 예치금 충전 + 교통카드 등록 + 노선 예약 + 탑승 시 교통카드 태깅. 운행일 7일 전 10시 오픈. <br> AIBOS: 차량 관제 SaaS. <br> COMMUTE: 좌석예약·차량관제·요금결제·CS 컨텍센터</td>
+<td><strong>B2G</strong>: 위즈돔(앱·결제) + 지자체/국토부(노선) + 운수사(운행) 3자 분담. <br> <strong>B2B</strong>: 코모빌리티협동조합("코모") 핵심 조합원으로 풀스택 (시스템+운수+법무·회계)</td>
+</tr>
+<tr>
+<td><strong>썬더디에스 UNIBUS</strong></td>
+<td><strong>B2B 풀스택</strong> (통근·통학·셔틀)</td>
+<td>사원증·스마트학생증·보안카드·QR 다중 인증 + 실시간 버스 위치 + 좌석 예약 + 결제(신용카드·가상계좌·휴대폰) 통합</td>
+<td><strong>B2B만</strong>. 한국산업단지공단(KICOX, 2020.07.01 개시 — <code class="notranslate">kicox.unibus.kr</code>) + 대학(한경대 <code class="notranslate">hknu</code>, 대진대 <code class="notranslate">daejin</code>, 서원대 <code class="notranslate">seowon</code>) + 산단 입주기업. 운수사 vs 발주처 계약 구조는 미규명</td>
+</tr>
+<tr>
+<td><strong>CIEL 헬로버스</strong></td>
+<td><strong>B2B + B2B 서비스</strong></td>
+<td>RTK GPS 1cm 정밀도 + 실시간 동적 배차/라우팅 + 노선 최적화 + FMS + 웹 BIS 통합. 사업자 514-81-81461, 위치기반서비스 신고 538호</td>
+<td><strong>번들 위탁운영 + 시스템 SaaS</strong>. 354사 (삼성·현대차·쿠팡·POSCO·LG화학·SK네트웍스·CJ·한화·농심 등). <strong>타깃 시장 포지셔닝 미확정</strong> (어린이 통학·호텔/병원·기업통근 모두 12차 검증 반박)</td>
+</tr>
+<tr>
+<td><strong>에스원 UVIS BUS</strong></td>
+<td><strong>B2B 그룹사 + 외부 B2B 진출 시도</strong></td>
+<td><strong>UVIS BUS</strong>: 카드리더 기반 탑승자 이력관리 (커스터마이징 필요, 에스원 카드 우선 연동) + DTG·GPS·OBD. <br> <strong>UVIS 노선버스</strong>: 별도 앱 (시내·공항버스)</td>
+<td>삼성그룹 7개 사업장 (DS/DX·디스플레이·SDI·바이오·Steco) in-house + <strong>2026.5.28 경기도청 0528 3차 외부 입찰 진출</strong>. 풀 턴키가 아닌 커스터마이징 기반</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p><strong>핵심 관찰</strong>:</p>
+<ul>
+<li><strong>위즈돔</strong>만 B2G(MiRi)+B2B(AIBOS) 양면 운영 — 가장 폭넓은 사업 영역</li>
+<li><strong>UNIBUS</strong>·<strong>헬로버스</strong>·<strong>UVIS BUS</strong>는 모두 B2B 단일 영역. 단 헬로버스는 번들 위탁(운수 포함)·UNIBUS는 시스템·UVIS는 그룹사+커스터마이징</li>
+<li>**B2C(이벤트·여행)**는 본 4사 모두 미진출 — 셔틀콕 등 별도 매칭 플랫폼 영역</li>
+</ul>
+<h2>3-4. 모빌리전트 vs 경쟁사 차별화 포인트</h2>
 <markdown-accessiblity-table><table role="table">
 <thead>
 <tr>
@@ -577,6 +629,73 @@
 </tbody>
 </table></markdown-accessiblity-table>
 <hr>
+<h1>3-A부. 사업 유형별 시나리오 비교 (B2G·B2B·B2C)</h1>
+<p>같은 "버스 운행관리시스템"이라도 사업 유형에 따라 발주 구조·승객 흐름·시스템 기능 구성이 본질적으로 다르다. 모빌리전트(카모마일)는 어떤 시나리오를 타깃하느냐에 따라 진입 전략이 달라진다.</p>
+<h2>3-A-1. B2G 시나리오 — 광역버스 좌석예약 (위즈돔 MiRi 검증 사례)</h2>
+<p><strong>거버넌스 3자 분담</strong>:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>주체</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>위즈돔 (플랫폼 운영)</td>
+<td>예약 앱·결제·예치금 관리</td>
+</tr>
+<tr>
+<td>지자체·국토부 (정책)</td>
+<td>노선·요금·한정면허 부여</td>
+</tr>
+<tr>
+<td>운수사 (실 운행)</td>
+<td>차량·기사·운행·분실물 처리</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p><strong>승객 표준 흐름</strong> (검증됨, 사용자 가설 정확 일치):</p>
+<pre class="notranslate"><code class="notranslate">① 앱 설치 → ② 교통카드 등록 → ③ 예치금 충전 → ④ 노선 검색·예약 (운행일 7일 전 10시 오픈) → ⑤ 운행일 출발 1시간 전까지 변경 가능 → ⑥ 탑승 시 등록 교통카드 태깅 → ⑦ 예약 확인 자동 처리
+</code></pre>
+<p><strong>노선 등급별 요금</strong> (MiRi 1차 자료):</p>
+<ul>
+<li>M버스 (광역급행) 예치금 2,800/3,200원</li>
+<li>G버스 (광역) 동일 2,800/3,200원</li>
+<li>P버스 (프리미엄) 3,050/3,450원</li>
+<li>30km 초과 거리비례제·환승할인·청소년할인 등 일반 대중교통 요금체계</li>
+</ul>
+<p><strong>모빌리전트 진입성</strong>: B2G 광역버스는 지자체+국토부+운수사 3자 거버넌스라 진입 장벽 매우 높음. 위즈돔 외 신규 진입 사례 없음.</p>
+<h2>3-A-2. B2B 시나리오 — 민간 기업 통근버스 (LG디스플레이 검증 사례)</h2>
+<p><strong>발주~계약 표준 흐름</strong> (LG디스플레이 PDF 원문 검증):</p>
+<pre class="notranslate"><code class="notranslate">① 발주처 GP팀(예: LG디스플레이 Global GP팀) 1차 EDM 작성
+② 지역 전세버스조합(서울 tourbus.or.kr 등)에 공문 발송
+③ 조합 → 전회원사 일괄 EDM 배포
+④ 회원사 응모 (자차 70%·차량 9년 이내·신용 B 이상)
+⑤ 발주처 1차 이메일 회신 마감 (예: 2023.08.04)
+⑥ OT 설명회 (품질 60% + 가격 40% 평가 세부 지표 공개)
+⑦ 종합평가 → 낙찰
+⑧ 운수사가 시스템 자율 도입 (사양 명시 없음)
+</code></pre>
+<p><strong>승객(직원) 사용 흐름</strong> (헬로버스·위즈돔 AIBOS·UNIBUS 공통):</p>
+<pre class="notranslate"><code class="notranslate">① 사원증 등록 (또는 QR·앱) → ② 앱에서 노선·시간 확인 → ③ (옵션) 좌석 예약 → ④ 탑승 시 사원증/QR 인증 → ⑤ 관리자 웹에서 운영자 통계 확인
+</code></pre>
+<p><strong>핵심 발견 — LG디스플레이 EDM PDF 원문 grep 결과 (12차 검증)</strong>:</p>
+<ul>
+<li>"시스템·GPS·앱·QR·RFID·예약·인증·DTG·관제·위치·결제·소프트웨어·플랫폼·모바일·디지털·IT" 키워드 매칭 <strong>0건</strong></li>
+<li>자격 요건은 운행 인프라(차량·신용·자차 비율)만</li>
+<li>품질 60% 평가 세부 지표는 OT 설명회에서만 공개</li>
+</ul>
+<p>→ <strong>사용자의 "공고에 시스템 명시 없다" 관찰이 1차 자료로 입증.</strong></p>
+<h2>3-A-3. B2C 시나리오 — 이벤트·여행 셔틀 (콘서트·테마파크·리조트)</h2>
+<p><strong>12차에서 검증된 클레임 없음</strong> — 셔틀콕·전세버스 매칭 플랫폼 사례는 후속 조사 필요.</p>
+<p><strong>일반 추정 흐름</strong> (검증 필요):</p>
+<ul>
+<li>발주: 콘서트 주최·테마파크 운영사 → 이벤트성 단발 발주 → 전세버스 매칭 플랫폼(셔틀콕 등) 활용</li>
+<li>승객(일반인): 앱·웹에서 좌석 예약 → 신용카드·간편결제 → QR/탑승권 인증</li>
+<li>시스템 수준: 단순 위치추적·일회성이 다수, 풀스택은 드묾</li>
+</ul>
+<hr>
 <h1>4부. 시스템 사용 패턴 분석</h1>
 <h2>4-1. 발주 공고의 시스템 사양 명시 비율 (검증 표본 기준)</h2>
 <p>공공 발주 9건 검증 결과:</p>
@@ -586,7 +705,47 @@
 <li>⚠ <strong>확인 불가: 1건 (11%)</strong> — 서울지방항공청</li>
 </ul>
 <p>LH 5년치 45건 중 표본 4건 (서울·대전충남·본사·인천) 추가 검증 결과 동일 패턴 — <strong>서울본부만 사양 명시</strong>.</p>
-<p>민간 5건 (LG디스플레이 4건 + 셀트리온 1건) 모두 <strong>시스템 사양 미명시</strong>.</p>
+<p>민간 5건 (LG디스플레이 4건 + 셀트리온 1건) 모두 <strong>시스템 사양 미명시</strong>. <strong>LG디스플레이 EDM PDF 원문 grep</strong> 결과 "시스템·GPS·앱·QR·RFID·예약·인증·DTG·관제·위치·결제·소프트웨어·플랫폼·모바일·디지털·IT" 키워드 <strong>0건</strong>.</p>
+<h2>4-1-A. 실제 수요 구조 — 공고에 안 보이는 시스템 시장은 어떻게 존재하는가? (12차 핵심 분석)</h2>
+<p>사용자 핵심 질문: "공고에 시스템 명시가 거의 없는데 실제 수요가 어떻게 존재하는가?"</p>
+<p><strong>답</strong>: 공고에 명시되지 않아도 시스템 도입은 발생함. 결정 주체와 동기 분석:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>결정 주체</th>
+<th>도입 동기</th>
+<th>발생 빈도 추정</th>
+<th>모빌리전트 영업 진입점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>발주처</strong></td>
+<td>시스템 분리발주 (경기도청 본청 모델) 또는 사양에 시스템 탑재 명시 (LH 서울본부)</td>
+<td><strong>희소</strong> (검증 2건만)</td>
+<td>직접 입찰 (1순위 트랙)</td>
+</tr>
+<tr>
+<td><strong>발주처 GP팀 별도 RFP</strong></td>
+<td>운수사 입찰과 분리된 본사 시스템 RFP</td>
+<td>빈도 미상 (LG디스플레이 가능성 추정)</td>
+<td>본사 영업 (Track 2)</td>
+</tr>
+<tr>
+<td><strong>운수사 (낙찰 후 자체 도입)</strong></td>
+<td>(a) 발주처 품질평가 60% 가산점 / (b) 운영 효율 (배차·기사관리·민원) / (c) DTG 법정 의무 대응 / (d) 후속 입찰 신인도 누적</td>
+<td><strong>다수 추정</strong> (대부분의 공고에서 시스템 미명시이지만 운수사가 자체 도입)</td>
+<td><strong>운수사 직접 영업 (가장 큰 미개척 채널)</strong></td>
+</tr>
+<tr>
+<td><strong>산단협의체 / 입주기업 협회</strong></td>
+<td>단지 단위 공동 통근 시스템 (군산국가산단 사례)</td>
+<td>산단별 1건 수준</td>
+<td>산단별 영업</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>→ <strong>모빌리전트 카모마일 영업 진입점 핵심 시사</strong>: 발주 공고에 시스템 사양이 명시되기를 기다리는 영업 전략은 비효율. <strong>(a) 운수사 직접 영업</strong> + <strong>(b) 발주처 GP팀에 "품질평가 60% 가산점" 메시지로 RFP 별도 트랙 제안</strong>이 핵심.</p>
 <h2>4-2. 시스템 사용 시나리오 3가지</h2>
 <p>발주처가 시스템 사양을 명시하지 않더라도, 실제 운행은 다음 3가지 패턴으로 나뉜다:</p>
 <markdown-accessiblity-table><table role="table">
@@ -616,13 +775,50 @@
 </tbody>
 </table></markdown-accessiblity-table>
 <p><strong>모빌리전트 영업 함의</strong>: (c) 패턴이 다수 → 발주처가 시스템 도입의 비용 절감·관리 효율 가치를 인식하지 못한 상태. <strong>시스템 도입의 가치를 발주처에 설득하는 것이 핵심 영업 메시지</strong>.</p>
-<h2>4-3. 발주 채널 표준 — 서울특별시전세버스운송사업조합 EDM</h2>
-<p>공공·민간 모두 동일한 표준 채널 확정:</p>
+<h2>4-3. 발주 채널 표준 — 시·도 단위 전세버스운송사업조합 EDM</h2>
+<p><strong>중요 정정 (12차)</strong>: 전국전세버스공제조합(<strong>NMCB, nmcb.org</strong>)은 <strong>공제·보험 전담</strong>으로 발주 게시판 없음. 발주 모집은 <strong>시·도 단위 전세버스운송사업조합</strong>이 담당.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>조합</th>
+<th>URL</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>전국전세버스공제조합 (NMCB)</td>
+<td>nmcb.org</td>
+<td><strong>공제계약·차량운행증·공제금·사고접수(1588-3080)</strong> 전담. 발주 게시판 ❌</td>
+</tr>
+<tr>
+<td>전국전세버스운송사업조합연합회 (KTBus)</td>
+<td>ktbus.com</td>
+<td>연합회 소개·공제 안내·운행기록증. 발주 게시판 ❌</td>
+</tr>
+<tr>
+<td><strong>서울특별시전세버스운송사업조합</strong></td>
+<td><strong>tourbus.or.kr</strong></td>
+<td>✅ <strong>발주 EDM 핵심 채널</strong> — LG디스플레이·국회·정부서울청사·셀트리온 사례 확인</td>
+</tr>
+<tr>
+<td>경기도전세버스운송사업조합</td>
+<td>kgtb.or.kr 등</td>
+<td>(LG디스플레이 일부 노선 공동 발송 사례) — 본 라운드 직접 검증 미진</td>
+</tr>
+<tr>
+<td>인천·부산·대구·광주·대전·울산·세종·강원·충북·충남·전북·전남·경북·경남·제주</td>
+<td>각 지역별</td>
+<td><strong>본 라운드 검증 미진</strong> — 서울 패턴이 다른 지역도 동일한지 확인 필요</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p><strong>공공·민간 모두 동일한 서울조합 표준 채널 확정</strong>:</p>
 <ul>
 <li><strong>민간</strong>: LG디스플레이 2023년 3건 (2.23, 7.5, 7.26) — 1년 내 동일 채널 반복 / 셀트리온 1건</li>
 <li><strong>공공</strong>: 국회사무처(2022.12.22), 정부서울청사(2023.10.31) — 공공도 나라장터 + 조합 EDM 병행</li>
 </ul>
-<p>→ <strong>tourbus.or.kr 모니터링이 모빌리전트의 핵심 영업 정보 수집 단일 채널</strong></p>
+<p>→ <strong>tourbus.or.kr 모니터링이 모빌리전트의 핵심 영업 정보 수집 단일 채널</strong>. 단 서울 외 지역(특히 경기·인천·부산) 조합 EDM도 동일 패턴인지는 후속 조사 필요</p>
 <h2>4-4. 시장 환경 변화 — 혁신도시 공기업 통근버스 폐지</h2>
 <p>국토부 지시(2026.1.26)로 혁신도시 이전 공공기관 통근버스 단계적 운행 중단:</p>
 <ul>
@@ -701,10 +897,10 @@
 </thead>
 <tbody>
 <tr>
-<td>(a) <strong>노바/카모마일(KD) 그룹사 면허 활용</strong></td>
-<td>그룹사가 전세버스 면허 보유 시 우회 가능. <strong>(주)대원관광(KD운송그룹, 152대 보유)</strong> 조합 등재 여부 사내 확인 + 사업 협력 협의</td>
-<td>사내 자원, 최단 경로 후보</td>
-<td><strong>최우선</strong></td>
+<td>(a) <strong>KD운송그룹(대원관광) 결합 — 진행 중</strong> ⭐</td>
+<td><strong>(주)대원관광 = KD 계열사 + 서울특별시전세버스조합 회원 + 전세버스 면허 보유 확정 (사용자 정보)</strong>. 모빌리전트 카모마일이 KD에 도입 협상 진행 중. 대원관광 응모 + 카모마일 시스템 공급의 통합 패키지 가능</td>
+<td>협상 완결 시 즉시 실행</td>
+<td><strong>활성 트랙</strong></td>
 </tr>
 <tr>
 <td>(b) 기존 운수사 인수</td>
@@ -747,10 +943,10 @@ Track 2 (본사 GP팀 RFP 별도)
 </thead>
 <tbody>
 <tr>
-<td><strong>결제 모듈 부재</strong> (UNIBUS·위즈돔 통합)</td>
-<td>PG사 연계 (이니시스·KCP) 또는 자체 개발</td>
-<td>높음</td>
-<td>3개월</td>
+<td><del>결제 모듈 부재</del></td>
+<td>(사용자 정보: 현 시점 시급도 낮음 — B2B 통근버스는 발주처 일괄 결제 구조라 승객 결제 모듈 불필요. B2G·B2C 확장 시점 재검토)</td>
+<td><strong>낮음 (보류)</strong></td>
+<td>—</td>
 </tr>
 <tr>
 <td><strong>실시간 위치 확인</strong> (LH 서울본부 요구)</td>
@@ -1019,7 +1215,11 @@ Track 2 (본사 GP팀 RFP 별도)
 <ul>
 <li>헬로버스 (CIEL) — <a href="https://hellobus.co.kr/" rel="nofollow">https://hellobus.co.kr/</a>, <a href="https://www.ciel.co.kr/blog/" rel="nofollow">https://www.ciel.co.kr/blog/</a>*</li>
 <li>위즈돔 — <a href="https://wizdome.co.kr/" rel="nofollow">https://wizdome.co.kr/</a></li>
+<li><strong>위즈돔 MiRi (광역버스 좌석예약 B2G)</strong> — <a href="https://cdn.e-bus.co.kr/miri/v3/miritrcom/index.html" rel="nofollow">https://cdn.e-bus.co.kr/miri/v3/miritrcom/index.html</a> + <a href="https://cdn.e-bus.co.kr/miri/v3/miritrcom/faq.html" rel="nofollow">https://cdn.e-bus.co.kr/miri/v3/miritrcom/faq.html</a> + Google Play <code class="notranslate">kr.co.wizdome.miri</code></li>
 <li><strong>코모빌리티협동조합</strong> — <a href="https://www.comobility.org/" rel="nofollow">https://www.comobility.org/</a></li>
+<li>전국전세버스공제조합(NMCB, 공제 전담) — <a href="https://nmcb.org/cooperative/user/main.do" rel="nofollow">https://nmcb.org/cooperative/user/main.do</a></li>
+<li>전국전세버스운송사업조합연합회(KTBus) — <a href="https://ktbus.com/" rel="nofollow">https://ktbus.com/</a></li>
+<li>KD운송그룹 KD투어 (호텔/리조트 셔틀 운영) — <a href="http://www.kdtour.co.kr/bus/sub_main.html" rel="nofollow">http://www.kdtour.co.kr/bus/sub_main.html</a></li>
 <li>UNIBUS (썬더디에스) — <a href="https://www.unibus.kr/" rel="nofollow">https://www.unibus.kr/</a> (학교 서브도메인 hknu·mokwon·seowon·kicox)</li>
 <li>셔틀아이디 — <a href="https://www.shuttle.id/" rel="nofollow">https://www.shuttle.id/</a></li>
 <li>HMG autobus — <a href="https://new.autobus.co.kr/" rel="nofollow">https://new.autobus.co.kr/</a></li>
