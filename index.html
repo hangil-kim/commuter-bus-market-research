@@ -25,7 +25,7 @@
 <blockquote>
 <p><strong>목적</strong>: (1) 한국 통근버스 운행관리시스템 시장 구조 규명 + (2) 모빌리전트가 사업 수주에 성공하기 위한 영업·기술·진입 전략 정리<br>
 <strong>마지막 갱신</strong>: 2026-06-09<br>
-<strong>조사 기간 / 방법</strong>: 2026-06-02 ~ 2026-06-09, 13회 누적 조사 — deep-research workflow + Playwright 직접 크롤링(LH e-bid·tourbus.or.kr) + HWP 첨부 파싱(pyhwp/hwp5txt)<br>
+<strong>조사 기간 / 방법</strong>: 2026-06-02 ~ 2026-06-09, 14회 누적 조사 — deep-research workflow + Playwright 직접 크롤링(LH e-bid·tourbus.or.kr) + HWP 첨부 파싱(pyhwp/hwp5txt)<br>
 <strong>검증된 표본</strong>: 공공 공고 11건 + LH e-bid 5년치 45건 + 민간 도입 사례 12건 + 시스템사 6사 + 협력 운수사 2사 + 위즈돔 MiRi(B2G) 시나리오 1차 자료<br>
 <strong>사용자 1차 확정 정보</strong>: (주)대원관광 = KD운송그룹 계열사 + 서울특별시전세버스조합 회원 + 전세버스 면허 / 카모마일(Camomile) = 모빌리전트의 시스템 제품명 / <strong>KD에 카모마일 도입 협상 진행 중</strong></p>
 </blockquote>
@@ -47,6 +47,7 @@
 <li><strong>카모마일(Camomile) = 모빌리전트의 버스운행관리시스템 제품명</strong></li>
 <li><strong>모빌리전트-KD 카모마일 도입 계약 협상 진행 중</strong> (체결 전, 아직 미완결)</li>
 <li><strong>KD가 SK하이닉스 통근버스 입찰 참여 예정</strong> (공고 미게시·미수주 상태 — 향후 잠재 기회)</li>
+<li>⚠ <strong>SK하이닉스 현 시스템 = 위즈돔 HAPPYROAD 점유 확정</strong> (14차 확인) — <code class="notranslate">commute-h.e-bus.co.kr/client/skhynix</code>, AIBOS 백엔드, 이천 부발읍 현장 위즈돔 정규직 운영(기획·관제·CS·VOC). 위즈돔-SK 다년 직접 위탁계약 추정. KD 응모 시 위즈돔 기존 운영 구조와 정면 경쟁, <strong>입찰 진입 난도 매우 높음</strong></li>
 <li><strong>전략 핵심</strong>: 모빌리전트가 다른 시스템사(헬로버스·위즈돔·UNIBUS·에스원)와 경쟁하려면 <strong>운수사 역량(KD/대원관광) 확보가 필수</strong> — 시스템 단독 진입 트랙은 희소하므로 운수사+시스템 결합형 풀스택 입찰 능력이 결정적</li>
 </ul>
 </blockquote>
@@ -190,14 +191,24 @@
 <td><a href="https://www.bidpro.co.kr/n0_ipchal/konggo/svc/konggo_view.asp?num=2870144" rel="nofollow">bidpro #2870144</a></td>
 </tr>
 <tr>
-<td><strong>국립목포대학교</strong> ⭐ 신규 발굴</td>
+<td><strong>국립목포대학교</strong></td>
 <td>20230733262-00 (2023.7)</td>
 <td>약 2,608만원 (VAT 포함 2,869만원)</td>
 <td>12개월</td>
 <td>(통학버스시스템 SW만)</td>
 <td>✅ <strong>통학버스관리시스템 임차용역 — 시스템 단독 SW 발주</strong> (모바일앱 + QR 승차 + 실시간 위치추적 + 예약 포함)</td>
-<td><strong>시스템 벤더: UNIBUS</strong> (<code class="notranslate">mokpo.unibus.kr</code>, "MNU버스로" 2023.9.18 운영 개시). <strong>국립대학교가 시스템 단독 분리발주 신규 채널로 식별</strong></td>
+<td>UNIBUS 수주 (<code class="notranslate">mokpo.unibus.kr</code>, "MNU버스로")</td>
 <td><a href="https://www.jungi.net/detail_bid/index/bid7938942" rel="nofollow">jungi.net #bid7938942</a> + <a href="https://rne.mokpo.ac.kr/bbs/arts/273/236533" rel="nofollow">목포대 공식</a></td>
+</tr>
+<tr>
+<td><strong>대학 통학버스 SaaS 시장 (14차 발굴)</strong> — 한경국립대(hknu)·KOREATECH(koreatech)·대진대(daejin)·대구대(daegu)·동국대 WISE(dongguk)·목원대(mokwon)·서원대(seowon)·영남대(yu)</td>
+<td>개별 공고 미수집 — 운영 사이트 활성 확인</td>
+<td>미공개</td>
+<td>진행 중</td>
+<td>(통학버스시스템 SW만)</td>
+<td>✅ <strong>UNIBUS 멀티테넌트 SaaS</strong> — <code class="notranslate">[학교명].unibus.kr</code> 9개 서브도메인 활성</td>
+<td>UNIBUS 수주 (대학 시장 사실상 도미넌트)</td>
+<td><a href="https://www.unibus.kr/" rel="nofollow">unibus.kr</a> + 학교별 서브도메인</td>
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
@@ -509,11 +520,11 @@
 </tr>
 <tr>
 <td>9</td>
-<td><strong>SK하이닉스</strong> ⚠ 잠재 기회 (사례 아님)</td>
-<td>미공개</td>
+<td><strong>SK하이닉스</strong> ⚠ 잠재 기회 + <strong>현 운영사 확인됨</strong></td>
+<td>위즈돔이 직접 기획·관제·CS·인력 운영 + 활기찬중부관광 등 다수 전세버스사가 노선별 운수 분담 (2단 구조)</td>
 <td><strong>공고 미게시</strong> — KD가 향후 입찰 참여 예정</td>
-<td><strong>모빌리전트-KD 카모마일 도입 계약 협상 진행 중</strong> (체결 전, 미수주)</td>
-<td>사용자 정보</td>
+<td><strong>현 점유: 위즈돔 HAPPYROAD 시스템</strong> (<code class="notranslate">commute-h.e-bus.co.kr/client/skhynix</code> + 앱 <code class="notranslate">kr.co.wizdome.happyroad</code>). SK그룹과 다년 직접 위탁계약 추정 (공개 입찰 채널 아님). 위즈돔이 'SK하이닉스 통근버스 기획/운영' 정규직 채용 중 (이천 부발읍 경충대로 2091). <strong>모빌리전트-KD 카모마일 도입 계약 협상 진행 중</strong> (체결 전, 미수주). KD 응모 시 위즈돔 기존 운영 구조와 정면 경쟁</td>
+<td><a href="https://commute-h.e-bus.co.kr/client/skhynix" rel="nofollow">HAPPYROAD 포털</a> + <a href="https://m.saramin.co.kr/job-search/view?rec_idx=46367462" rel="nofollow">위즈돔 채용공고</a></td>
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
@@ -621,9 +632,9 @@
 <tbody>
 <tr>
 <td><strong>위즈돔</strong></td>
-<td><strong>B2G: MiRi(미리)</strong> — 광역버스 좌석예약 (M·G·P버스) <br> <strong>B2B: AIBOS·COMMUTE</strong> — 통근관제·좌석예약 통합</td>
-<td>MiRi: 예치금 충전 + 교통카드 등록 + 노선 예약 + 탑승 시 교통카드 태깅. 운행일 7일 전 10시 오픈. <br> AIBOS: 차량 관제 SaaS. <br> COMMUTE: 좌석예약·차량관제·요금결제·CS 컨텍센터</td>
-<td><strong>B2G</strong>: 위즈돔(앱·결제) + 지자체/국토부(노선) + 운수사(운행) 3자 분담. <br> <strong>B2B</strong>: 코모빌리티협동조합("코모") 핵심 조합원으로 풀스택 (시스템+운수+법무·회계)</td>
+<td><strong>B2G: MiRi(미리)</strong> — 광역버스 좌석예약 (M·G·P버스) <br> <strong>B2B: AIBOS·COMMUTE</strong> — 통근관제·좌석예약 통합 <br> <strong>B2B 화이트라벨: HAPPYROAD</strong> — SK하이닉스 전용 (<code class="notranslate">commute-h.e-bus.co.kr/client/skhynix</code>, 앱 <code class="notranslate">kr.co.wizdome.happyroad</code>, AIBOS 백엔드)</td>
+<td>MiRi: 예치금 충전 + 교통카드 등록 + 노선 예약 + 탑승 시 교통카드 태깅. 운행일 7일 전 10시 오픈. <br> AIBOS: 차량 관제 SaaS. <br> COMMUTE: 좌석예약·차량관제·요금결제·CS 컨텍센터. <br> <strong>HAPPYROAD: 위즈돔이 SK하이닉스 통근버스 직접 기획·관제·CS·VOC 운영</strong> (이천 부발읍 현장 정규직)</td>
+<td><strong>B2G</strong>: 위즈돔(앱·결제) + 지자체/국토부(노선) + 운수사(운행) 3자 분담. <br> <strong>B2B (코모형)</strong>: 코모협동조합 결합 풀스택. <br> <strong>B2B (HAPPYROAD형)</strong>: 위즈돔 직접 기획·관제·CS + 활기찬중부관광 등 다수 전세버스사 노선 분담. SK그룹과 다년 직접 위탁계약 추정</td>
 </tr>
 <tr>
 <td><strong>썬더디에스 UNIBUS</strong></td>
@@ -955,7 +966,7 @@
 <td><strong>6</strong></td>
 <td>대학·병원·종교기관·리조트 셔틀</td>
 <td>직접 영업</td>
-<td>UNIBUS·CIEL·위즈돔 미도입처 (서울대병원 시스템 미확인). <strong>국립대학교 통학버스시스템 분리발주 — 13차 신규 채널 발굴</strong>: 국립목포대(UNIBUS 수주 사례)·서울대·부산대·경북대 등 30여 국립대 잠재 발주처</td>
+<td>⚠ <strong>대학 통학버스 SaaS 시장 = UNIBUS 도미넌트 확정</strong> (14차) — 한경대·KOREATECH·대진·대구·동국 WISE·목원·서원·영남·목포 등 9개 멀티테넌트 점유. <strong>모빌리전트 진입 영역</strong>: UNIBUS 미점유 (서울대·부산대·연세대·고려대·KAIST 등 주요 미점유 대학), 병원·종교기관·리조트 셔틀. 시도교육청은 학교안전공제중앙회 중앙 시스템(schoolsafe24) 운영으로 분리발주 시장 부재 — <strong>영업 대상에서 제외</strong></td>
 </tr>
 <tr>
 <td>❌</td>
@@ -1016,11 +1027,20 @@
 <li>시스템 SaaS 단독으로는 위즈돔·헬로버스 대비 영업 능력·운영 역량 부족 (지원 인프라·운수사 네트워크·법무·회계 부재)</li>
 <li><strong>카모마일 + 대원관광 결합은 모빌리전트가 시장 진입을 위한 최소 필수 조건</strong></li>
 </ul>
-<p><strong>SK하이닉스 입찰 잠재 첫 시도</strong>:</p>
+<p><strong>SK하이닉스 입찰 잠재 첫 시도 — 현 상황 + 경쟁 환경</strong>:</p>
 <ul>
 <li><strong>현재 상태</strong>: 모빌리전트-KD 카모마일 도입 <strong>계약 협상 진행 중</strong> (체결 전). SK하이닉스 통근버스 <strong>공고 미게시</strong> — KD 응모 예정. <strong>수주된 사례 아님</strong></li>
-<li>협상·응모·수주 모두 성공해야 첫 실증 사례 성립</li>
-<li><strong>성공 시 기대 효과</strong>: (1) 풀스택 모델 첫 실증 / (2) SK그룹 레퍼런스 확보 (현재 SK그룹은 위즈돔 점유) / (3) 후속 대기업 통근버스 입찰 확장 기반</li>
+<li>⚠ <strong>현 점유자 위즈돔(HAPPYROAD)</strong> — <code class="notranslate">commute-h.e-bus.co.kr/client/skhynix</code> 시스템 + 이천 현장 위즈돔 정규직(기획·관제·CS·VOC 다수) + 활기찬중부관광 등 전세버스사 노선 분담의 <strong>2단 구조 다년 위탁</strong> 운영 중</li>
+<li><strong>KD 응모 시 경쟁 시나리오</strong>:
+<ul>
+<li>신규 노선·확장 입찰 가능성 (위즈돔 운영과 병행)</li>
+<li>기존 다년 위탁 만료 후 재발주 가능성 (위즈돔이 갱신 우선권 보유)</li>
+<li>부분 노선 분리발주 가능성</li>
+</ul>
+</li>
+<li>협상·공고·응모·수주·운영 모두 단계별 성공해야 첫 실증 사례 성립</li>
+<li><strong>성공 시 기대 효과</strong>: (1) 위즈돔 점유 시장 첫 진입 / (2) SK그룹 레퍼런스 일부 확보 (현 위즈돔 점유) / (3) 후속 대기업 통근버스 입찰 확장 기반</li>
+<li><strong>실패 시 영업 대안</strong>: KD 운수사 역량으로 다른 대기업(헬로버스·UNIBUS 미점유) 입찰 응모 — 위즈돔 미점유 화이트스페이스 우선 공략</li>
 </ul>
 <h2>5-3. 2-Track 영업 전략 (민간)</h2>
 <p>LG디스플레이 사례로 확정된 표준:</p>
@@ -1227,19 +1247,24 @@ Track 2 (본사 GP팀 RFP 별도)
 <td>KICOX 입찰 게시판·산단 협의체 자료 확인</td>
 </tr>
 <tr>
-<td>12</td>
-<td><strong>SK하이닉스 통근버스 발주 채널</strong> ⭐ (KD 응모 예정 대비)</td>
-<td>SK그룹 자체 구매 시스템·Ariba·기존 운수사 계약 이력 확인. 13차 1차 자료 확보 실패</td>
+<td><del>12</del></td>
+<td><del>SK하이닉스 통근버스 발주 채널</del> → <strong>14차 해결</strong>: 위즈돔 HAPPYROAD 시스템(<code class="notranslate">commute-h.e-bus.co.kr/client/skhynix</code>) + 이천 현장 위즈돔 정규직 운영 + 활기찬중부관광 등 다수 전세버스사 노선 분담. SK그룹과 다년 직접 위탁계약 추정 (공개 입찰 채널 아님)</td>
+<td>(해결)</td>
 </tr>
 <tr>
 <td>13</td>
 <td>17개 광역시도청·국립대·시도교육청 시스템 단독 분리발주 추가 사례</td>
-<td>나라장터 키워드 모니터링 자동화 (13차에서 목포대 1건 신규 발굴 — 잠재 채널 존재)</td>
+<td>14차 진전: 시도교육청은 학교안전공제중앙회 중앙운영으로 분리발주 부재 확인. 17개 광역시도청·30여 국립대(UNIBUS 미점유 영역)는 잠재 채널 유지</td>
 </tr>
 <tr>
 <td>14</td>
 <td>부산·대구·광주·대전·울산·세종·강원·충북·충남·전북·전남·경남·제주 조합 EDM 게시판 (회원전용 영역 포함)</td>
 <td>각 조합 직접 가입 또는 회원사 인터뷰</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>위즈돔-SK하이닉스 위탁계약 만료 시점</strong> ⭐ 신규 — 모빌리전트가 재발주 시점에 경쟁 응모 가능</td>
+<td>SK하이닉스 ESG 보고서·전자공시 부속명세서 + 위즈돔 정규직 채용 신규 공고 패턴 분석</td>
 </tr>
 </tbody>
 </table></markdown-accessiblity-table>
@@ -1341,6 +1366,11 @@ Track 2 (본사 GP팀 RFP 별도)
 <li>학교안전공제중앙회 어린이 통학버스 안심확인시스템 — <a href="https://schoolbus.ssif.or.kr/" rel="nofollow">https://schoolbus.ssif.or.kr/</a></li>
 <li>경상북도전세버스운송사업조합 (kjbus.kr) — <a href="http://www.kjbus.kr/" rel="nofollow">http://www.kjbus.kr/</a></li>
 <li>인천광역시전세버스운송사업조합 (ictourbus.kr) — <a href="http://www.ictourbus.kr/" rel="nofollow">http://www.ictourbus.kr/</a></li>
+<li><strong>위즈돔 HAPPYROAD (SK하이닉스 통근버스)</strong> (14차 발굴) — <a href="https://commute-h.e-bus.co.kr/client/skhynix" rel="nofollow">commute-h.e-bus.co.kr/client/skhynix</a> + Apple/Google <code class="notranslate">kr.co.wizdome.happyroad</code> + <a href="https://m.saramin.co.kr/job-search/view?rec_idx=46367462" rel="nofollow">위즈돔 채용공고 SK하이닉스 기획/운영</a></li>
+<li>활기찬중부관광 (SK하이닉스 노선 운수사 사례) — <a href="https://www.drcr.co.kr/" rel="nofollow">https://www.drcr.co.kr/</a> + 1-bus.com 채용공고</li>
+<li>UNIBUS 멀티테넌트 대학 9곳 — hknu·koreatech·daejin·daegu·dongguk·mokwon·seowon·yu·mokpo .unibus.kr</li>
+<li>학교안전공제중앙회 schoolsafe24 (어린이 통학버스 중앙시스템) — <a href="https://www.schoolsafe24.or.kr/" rel="nofollow">https://www.schoolsafe24.or.kr/</a></li>
+<li>현대차그룹 통근버스 (현대오토에버 운영) — <a href="https://new.autobus.co.kr/" rel="nofollow">https://new.autobus.co.kr/</a></li>
 <li>UNIBUS (썬더디에스) — <a href="https://www.unibus.kr/" rel="nofollow">https://www.unibus.kr/</a> (학교 서브도메인 hknu·mokwon·seowon·kicox)</li>
 <li>셔틀아이디 — <a href="https://www.shuttle.id/" rel="nofollow">https://www.shuttle.id/</a></li>
 <li>HMG autobus — <a href="https://new.autobus.co.kr/" rel="nofollow">https://new.autobus.co.kr/</a></li>
