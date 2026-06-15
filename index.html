@@ -8,8 +8,8 @@
 <style>
   body { box-sizing: border-box; max-width: 1100px; margin: 0 auto; padding: 24px; background: #f6f8fa; }
   .markdown-body { background: #ffffff; padding: 40px 56px; border: 1px solid #d0d7de; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
-  .markdown-body table { display: table; width: 100%; }
-  .markdown-body table th, .markdown-body table td { padding: 8px 12px; }
+  .markdown-body table { display: table; width: 100%; table-layout: fixed; }
+  .markdown-body table th, .markdown-body table td { padding: 8px 12px; word-break: keep-all; overflow-wrap: anywhere; vertical-align: top; }
   .markdown-body h1:first-child { margin-top: 0; }
   .markdown-body h1 { border-bottom: 2px solid #d0d7de; padding-bottom: 0.3em; margin-top: 1.5em; }
   .markdown-body h2 { border-bottom: 1px solid #d0d7de; padding-bottom: 0.25em; margin-top: 1.5em; }
@@ -172,76 +172,68 @@
 <h1>2부. 발주 사례 데이터베이스</h1>
 <h2>2-1. 공공 — 시스템 단독 분리발주 트랙 (모빌리전트 직접 타깃)</h2>
 <markdown-accessiblity-table><table role="table">
-<thead>
-<tr>
-<th>발주처</th>
-<th>공고/번호</th>
-<th>규모</th>
-<th>기간</th>
-<th>차량</th>
-<th>시스템 요구 명시 사양</th>
-<th>비고</th>
-<th>출처</th>
-</tr>
-</thead>
+
+
+
+<thead><tr><th>발주처</th><th>공고/번호</th><th>규모</th><th>기간</th><th>차량</th><th>시스템 요구 명시 사양</th><th>비고</th><th>출처</th></tr></thead>
 <tbody>
 <tr>
-<td><strong>경기도청 본청</strong></td>
-<td>제2026-454(1차)/493(2차)/<strong>517(3차)호</strong></td>
+<td><b>경기도청 본청</b></td>
+<td>제2026-454(1차)/493(2차)/<b>517(3차)호</b></td>
 <td>0.891억 추정</td>
 <td>36개월</td>
 <td>55대</td>
-<td>✅ <strong>별도 운영용역</strong> — 시스템 기능 요구사항 명시</td>
-<td><strong>에스원 0528 3차 낙찰 완료</strong> (에스원 UVIS BUS의 외부 광역지자체 수주 사례). 모빌리전트 1·2차 미참여, 3차 자격 완화로 에스원 신규 응모 → 수주. 기존 운영사: 유모스원. 종합평가(품질 60% + 가격 40%)</td>
+<td>✅ <b>별도 운영용역</b> — 시스템 기능 요구사항 명시</td>
+<td><b>에스원 0528 3차 낙찰 완료</b> (에스원 UVIS BUS의 외부 광역지자체 수주 사례). 모빌리전트 1·2차 미참여, 3차 자격 완화로 에스원 신규 응모 → 수주. 기존 운영사: 유모스원. 종합평가(품질 60% + 가격 40%)</td>
 <td><a href="https://www.gg.go.kr/bbs/boardView.do?bIdx=142171843&amp;bsIdx=469&amp;menuId=1547" rel="nofollow">경기도 입찰공고</a></td>
 </tr>
 <tr>
-<td><strong>경기도교육청 북부청사</strong> ⭐</td>
+<td><b>경기도교육청 북부청사</b> ⭐</td>
 <td>R25TA01292759-00 (계약 2025.12.30)</td>
-<td><strong>1,421만원 (수의계약)</strong></td>
+<td><b>1,421만원 (수의계약)</b></td>
 <td>1년</td>
 <td>미공개</td>
-<td>✅ <strong>시스템 임차용역 단독 분리발주</strong> — (주)유모스원 단독 수주. 지방계약법 제25조제1항5호나목(추정가격 2천만원 이하) 수의계약</td>
+<td>✅ <b>시스템 임차용역 단독 분리발주</b> — (주)유모스원 단독 수주. 지방계약법 제25조제1항5호나목(추정가격 2천만원 이하) 수의계약</td>
 <td>나라장터 계약현황</td>
-<td></td>
+<td>-</td>
 </tr>
 <tr>
-<td><strong>서울특별시 (시청 본청)</strong> ⭐</td>
+<td><b>서울특별시 (시청 본청)</b> ⭐</td>
 <td>R26TA01516190-00 (계약 2026.2.28)</td>
-<td><strong>1,940만원 (수의계약, 시스템 부분만 분리)</strong></td>
+<td><b>1,940만원 (수의계약, 시스템 부분만 분리)</b></td>
 <td>1년</td>
-<td><strong>공립 초등학교 51개교</strong> (차량 대수 비공개)</td>
-<td>✅ <strong>차량운행관리시스템 운영 용역 분리발주</strong> — (주)썬더디에스(UNIBUS) 단독 수주. <strong>시청 본청 평생교육국 명의(교육청 아님)</strong> 시민복지·어린이안전 사업, 2015년 도입 11년 연속 운영. 차량·인건비는 별도 본예산, 1,940만원은 시스템 부분만 분리. 앱 <code class="notranslate">kr.unibus.seoulcity.user</code>로 다년 락인 정황</td>
+<td><b>공립 초등학교 51개교</b> (차량 대수 비공개)</td>
+<td>✅ <b>차량운행관리시스템 운영 용역 분리발주</b> — (주)썬더디에스(UNIBUS) 단독 수주</td>
+<td><b>시청 본청 평생교육국 명의(교육청 아님)</b> 시민복지·어린이안전 사업, 2015년 도입 11년 연속 운영. 차량·인건비는 별도 본예산, 1,940만원은 시스템 부분만 분리. 앱 <code class="notranslate">kr.unibus.seoulcity.user</code>로 다년 락인 정황</td>
 <td>나라장터 계약현황 + <a href="https://news.seoul.go.kr/welfare/archives/399816" rel="nofollow">서울시 보도</a></td>
-<td></td>
 </tr>
 <tr>
-<td><strong>LH 서울지역본부</strong></td>
+<td><b>LH 서울지역본부</b></td>
 <td>2501353-00 (2025.4.24)</td>
 <td>1.36억(추정)/1.50억(기초)</td>
 <td>1년</td>
 <td>28인승 우등 1대</td>
-<td>✅ <strong>차량 사양 항목에 명시</strong> — "전방추돌감지장치, 차로이탈경보장치, Wi-Fi(무제한), USB 충전, <strong>버스운행정보제공시스템</strong>, <strong>이용직원이 실시간 버스 위치를 확인할 수 있는 시스템</strong>"</td>
-<td>HWP 첨부 파싱으로 verbatim 검증. 시스템 사양이 차량 사양에 통합 발주 형태이나, <strong>시스템 명시 자체는 분리발주 트랙과 동일한 진입 기회</strong></td>
+<td>✅ <b>차량 사양 항목에 명시</b> — "전방추돌감지장치, 차로이탈경보장치, Wi-Fi(무제한), USB 충전, <b>버스운행정보제공시스템</b>, <b>이용직원이 실시간 버스 위치를 확인할 수 있는 시스템</b>"</td>
+<td>HWP 첨부 파싱으로 verbatim 검증. 시스템 사양이 차량 사양에 통합 발주 형태이나, <b>시스템 명시 자체는 분리발주 트랙과 동일한 진입 기회</b></td>
 <td><a href="https://www.bidpro.co.kr/n0_ipchal/konggo/svc/konggo_view.asp?num=2870144" rel="nofollow">bidpro #2870144</a></td>
 </tr>
 <tr>
-<td><strong>국립목포대학교</strong></td>
+<td><b>국립목포대학교</b></td>
 <td>20230733262-00 (2023.7)</td>
 <td>약 2,608만원 (VAT 포함 2,869만원)</td>
 <td>12개월</td>
-<td>목포권 5노선/광주권 13노선/해남권 1노선 = <strong>19노선 35편</strong> (학교 직영 9 + 위탁 26)</td>
-<td>✅ <strong>통학버스관리시스템 임차용역 — 시스템 단독 SW 발주</strong> (모바일앱 + QR 승차 + 실시간 위치추적 + 예약 포함)</td>
+<td>목포권 5노선/광주권 13노선/해남권 1노선 = <b>19노선 35편</b> (학교 직영 9 + 위탁 26)</td>
+<td>✅ <b>통학버스관리시스템 임차용역 — 시스템 단독 SW 발주</b> (모바일앱 + QR 승차 + 실시간 위치추적 + 예약 포함)</td>
 <td>UNIBUS 수주 (<code class="notranslate">mokpo.unibus.kr</code>, "MNU버스로")</td>
 <td><a href="https://www.jungi.net/detail_bid/index/bid7938942" rel="nofollow">jungi.net #bid7938942</a> + <a href="https://rne.mokpo.ac.kr/bbs/arts/273/236533" rel="nofollow">목포대 공식</a></td>
 </tr>
 <tr>
-<td><strong>대학 통학버스 SaaS 시장</strong> — 한경국립대(hknu)·KOREATECH(koreatech)·대진대(daejin)·대구대(daegu)·동국대 WISE(dongguk)·목원대(mokwon)·서원대(seowon)·영남대(yu)</td>
+<td><b>대학 통학버스 SaaS 시장</b> — 한경국립대(hknu)·KOREATECH(koreatech)·대진대(daejin)·대구대(daegu)·동국대 WISE(dongguk)·목원대(mokwon)·서원대(seowon)·영남대(yu)</td>
 <td>개별 공고 미수집 — 운영 사이트 활성 확인</td>
 <td>미공개</td>
 <td>진행 중</td>
 <td>(통학버스시스템 SW만)</td>
-<td>✅ <strong>UNIBUS 멀티테넌트 SaaS</strong> — <code class="notranslate">[학교명].unibus.kr</code> 9개 서브도메인 활성</td>
+<td>✅ <b>UNIBUS 멀티테넌트 SaaS</b> — <code class="notranslate">[학교명].unibus.kr</code> 9개 서브도메인 활성</td>
 <td>UNIBUS 수주 (대학 시장 사실상 도미넌트)</td>
 <td><a href="https://www.unibus.kr/" rel="nofollow">unibus.kr</a> + 학교별 서브도메인</td>
 </tr>
